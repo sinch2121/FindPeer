@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Background color of the page */
+  }
+  
+  .container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    color: #A569BD ;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  
+  .search-bar {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input[type="text"] {
+    border: none;
+    background: transparent;
+    color: black; /* Changed text color to black */
+    outline: none;
+    width: 200px;
+  }
+  
+  .search-bar button {
+    border: none;
+    background: transparent;
+    color: black; /* Changed button text color to black */
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px; /* Adds some space between input and button */
+  }
+  
+  .search-bar button:hover {
+    color: #66cdaa;
+  }
+
+  
+h3{
+    margin-left: 40px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    display: flex; /* Make the links flex items */
+    align-items: center; /* Center the content vertically */
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .nav-links img {
+    width: 20px; /* Adjust the size of the icons */
+    height: 20px;
+    margin-right: 5px; /* Add spacing between the icon and text */
+  }
+  .teams-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .team {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .team h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .team p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .options {
+    margin-top: 10px;
+  }
+  
+  .connect-btn, .save-btn {
+    background-color: #66cdaa;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .connect-btn:hover, .save-btn:hover {
+    background-color: #4CAF50;
+  }
+  
+  
+  

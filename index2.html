@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script2.js"></script>
+    <link rel="stylesheet" href="styles2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete your profile!</title>
+</head>
+<body>
+    <body>
+        <h4>FindPeer</h4>
+        <div class="container">
+            <h3>Answer a few questions | Complete your profile | Find your perfect match<h3>
+                <h2>Let's make <span class="team">teamwork </span>effortless!</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <br><br>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="team">What kind of team/project/activity are you looking for?</label>
+                    <select id="team" name="team" required>
+                        <option value="">Select Team/Project/Activity</option>
+                        <option value="sports">Sports Team</option>
+                        <option value="creative">Creative Team</option>
+                        <option value="writing">Writing Team</option>
+                        <option value="IT">IT Project Team</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <label for="role">Who are you?</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select Role</option>
+                        <option value="student">Student</option>
+                        <option value="working">Working</option>
+                        <option value="professional">Professional</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    
+                    <label for="region">Region:</label>
+                    <select id="region" onchange="showStates()">
+                        <option value="">Select Region</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                    
+                    
+                    <label for="state">State:</label>
+                    <select id="state">
+                        <option value="">Select State</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                    </select>
+                    
+
+                    <label for="City">City:</label>
+                    <input type="text" id="city" name="city" required>
+
+                    
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" required>
+                    
+                    <label for="social">Social Media Handles:</label>
+                    <input type="text" id="social" name="social">
+                  
+                
+                <button id="exploreButton" type="Explore">Explore</button>
+                <script>
+                    document.getElementById("exploreButton").addEventListener("click", function() {
+                      // Show alert message
+                      alert("Your Profile has been created");
+                      
+                      // Navigate to new page
+                      window.location.href = "explore.html";
+                    });
+                    </script>
+            </form>
+        </div>
+        
+        <!-- Add a div for the popup box -
+<div id="popupBox" class="popup">
+    <div class="popup-content">
+      <img src="feature1-icon.png" alt="Avatar" class="avatar">
+      <p id="popupMessage">Profile has been created</p>
+    </div>
+  </div>-->
+
+
+ 
+  
+    </body>
+    
+</html>

@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #EBDEF0;
+}
+
+
+h4{
+  padding-top: 40px;
+  margin-left: 40px;
+  font-size: 28px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+h3{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 40px;
+  font-size: 38px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-checkbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.card-checkbox label {
+  cursor: pointer;
+}
+
+.card-checkbox label::before {
+  content: "\2714"; /* Unicode checkmark symbol */
+  display: inline-block;
+  font-size: 24px;
+  color: transparent;
+}
+
+.card-checkbox input[type="checkbox"]:checked + label::before {
+  color: green; /* Change the color when checked */
+}
+
+.submit-btn {
+  background-color: lavenderblush;
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-left: 900px;
+  margin-bottom: 30px;
+}
+
+.submit-btn:hover {
+  background-color: plum;
+}
+
+.submit-btn:active {
+  animation: clickAnimation 0.3s ease;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
